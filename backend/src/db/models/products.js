@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     underscored: true,
     freezeTableName: true,
     underscoredAll: true,
-    createdAt: "create_at",
+    createdAt: "created_at",
     updatedAt: "updated_at"
   });
   return Products;

@@ -14,9 +14,8 @@ exports.config = {
     },
     filename: function (req, file, next) {
       const ext = file.mimetype.split("/")[1];
-      //name-day.filetype
-      next(null, `${file.fieldname}-${Date.now()}.${ext}`);
-    },
+      next(null, `${file.fieldname}-${Date.now()}.${ext}`);       //name-day.filetype
+    }
   }),
   limits: {
     fieldSize: 1024 * 1024 * 5, // 5MB

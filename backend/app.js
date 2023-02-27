@@ -1,7 +1,9 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
-const port = 8080;
+const dotenv = require('dotenv')
+const app = express();
+
+dotenv.config()
 
 var corsOptions = {
   origin: ["http://example.com", "http://localhost:3000"],
@@ -15,5 +17,12 @@ app.use("/image", express.static("./images"));
 app.use(express.json());
 
 app.use(require("./src/routes/routes"));
+
+const port = process.env.PORT || 8080;
+const env = process.env.NODE_ENV || 'development'
+
+console.log(port);
+console.log(env);
+
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
