@@ -1,10 +1,15 @@
+const dotenv = require('dotenv')
+
+dotenv.config()
+
+module.exports =
 {
   "development": {
-    "username": "root",
-    "password": "1234",
-    "database": "sw_test",
-    "host": "localhost",
-    "port": "3307",
+    "username": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
+    "database": process.env.DB_DATABASE,
+    "host": process.env.DB_HOST,
+    "port": process.env.DB_PORT,
     "dialect": "mysql"
   },
   "test": {
