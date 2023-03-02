@@ -13,10 +13,8 @@ module.exports =
     "dialect": "mysql"
   },
   "test": {
-    "development": {
       "storage": "./dev.sqlite3",
        "dialect": "sqlite"
-     }
   },
   "production": {
     "username": "root",
