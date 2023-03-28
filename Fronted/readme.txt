@@ -1,10 +1,7 @@
 npm i -g create-react-app
-npx create-react-app reserve_scientific_equipment --template typescript
-
-reserve_scientific_equipment
+npx create-react-app cmreactjs_mui_stockworkshop --template typescript
 
 npm i -g yarn
-yarn install
 yarn start
 
 # vscode extension 
@@ -26,7 +23,7 @@ yarn add global create-react-component-folder
 npx crcf -f --notest --typescript LoginPage RegisterPage
 
 // In Layouts
-cd src/components/layouts
+cd src/component/layouts
 npx crcf -f --notest --typescript Header Menu
 npx crcf -f --notest --typescript AboutUs
 npx crcf -f --notest --typescript ReportPage StockPage StockCreatePage StockEditPage 
@@ -39,4 +36,10 @@ waring set Path in Env local to C:\Users\AN515-43\AppData\Local\Yarn\bin
 Problem
 - in react have 1 index.html
 - in webserver (nginx) do fallback process to root
+
+npm i -g @nestjs/cli
+nest new backend
+
+yarn global add @nestjs/cli
+yarn run start:dev  or npm run start:dev
 
