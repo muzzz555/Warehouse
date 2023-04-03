@@ -8,9 +8,16 @@ describe("Login", () => {
       cy.visit("http://localhost:3000");
       cy.viewport(1920, 1080);
     });
-    it("passes", () => {
-      cy.get().click()
-
+    it("Passes", () => {
+      // cy.get().click()
+      cy.get('#username').type("mu")
+      cy.get('#password').type("1234")
+      cy.get('.MuiButton-contained').click()
+    });
+    it("Fail", () => {
+      // cy.get().click()
+      cy.get('#username').type("mu")
+      cy.get('.MuiButton-contained').click()
     });
   });
 });
