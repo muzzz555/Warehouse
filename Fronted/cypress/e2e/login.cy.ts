@@ -1,5 +1,5 @@
 describe("Login", () => {
-  context("1920*1080 Viewport", () => {
+  context("Test Case Login", () => {
     beforeEach(() => {
       cy.window().then((win) => {
             win.localStorage.setItem("TOKEN", "1234");
