@@ -1,23 +1,58 @@
 describe("Login", () => {
-  context("1920*1080 Viewport", () => {
+  context("Test Case Login", () => {
     beforeEach(() => {
-      // run these tests as if in a desktop
-      // browser with a 720p monitor
-      // cy.viewport(1280, 720)
-      // cy.viewport(1366, 768)
+      cy.window().then((win) => {
+            win.localStorage.setItem("TOKEN", "1234");
+            win.localStorage.removeItem("TOKEN")
+          });
       cy.visit("http://localhost:3000");
       cy.viewport(1920, 1080);
     });
-    it("Passes", () => {
-      // cy.get().click()
+
+    it("Login_01", () => {
       cy.get('#username').type("mu")
       cy.get('#password').type("1234")
       cy.get('.MuiButton-contained').click()
+      cy.get('.MuiToolbar-root > .css-pf6rjo-MuiTypography-root').should("have.text", "For Project Software Testing in KMITL")
     });
-    it("Fail", () => {
-      // cy.get().click()
-      cy.get('#username').type("mu")
+
+    it("Login_02", () => {
       cy.get('.MuiButton-contained').click()
+      cy.should("not.have.text", "For Project Software Testing in KMITL")
     });
+
+    it("Login_03", () => {
+      cy.get('#password').type('1234')
+      cy.get('.MuiButton-contained').click()
+      cy.should("not.have.text", "For Project Software Testing in KMITL")
+    });
+
+    it("Login_04", () => {
+      cy.get('#username').type('mu')
+      cy.get('.MuiButton-contained').click()
+      cy.should("not.have.text", "For Project Software Testing in KMITL")
+    });
+
+    it("Login_05", () => {
+      cy.get('#username').type('poo')
+      cy.get('#password').type('789')
+      cy.get('.MuiButton-contained').click()
+      cy.should("not.have.text", "For Project Software Testing in KMITL")
+    });
+
+    it("Login_06", () => {
+      cy.get('#username').type('mu')
+      cy.get('#password').type('789')
+      cy.get('.MuiButton-contained').click()
+      cy.should("not.have.text", "For Project Software Testing in KMITL")
+    });
+
+    it("Login_07", () => {
+      cy.get('#username').type('poo')
+      cy.get('#password').type('1234')
+      cy.get('.MuiButton-contained').click()
+      cy.should("not.have.text", "For Project Software Testing in KMITL")
+    });
+
   });
 });
