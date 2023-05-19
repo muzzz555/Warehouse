@@ -16,10 +16,10 @@ describe("template spec", () => {
       LoginPass();
     });
 
-    it.skip("AddStock_01", () => {
+    it("AddStock_01", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName01");
-      cy.get("#files").selectFile("cypress/fixtures/Image01.jpeg");
+      cy.get("#files").selectFile("cypress/fixtures/Image01.jpg");
       cy.get(".MuiButton-contained").click();
       cy.get(".MuiToolbar-root > .css-pf6rjo-MuiTypography-root").should(
         "have.text",
@@ -27,7 +27,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_02", () => {
+    it("AddStock_02", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName02");
       cy.get('input[name="price"]').clear();
@@ -40,7 +40,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_03", () => {
+    it("AddStock_03", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName03");
       cy.get('input[name="stock"]').clear();
@@ -53,7 +53,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_04", () => {
+    it("AddStock_04", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName04");
       cy.get('input[name="price"]').clear();
@@ -68,7 +68,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_05", () => {
+    it("AddStock_05", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName05");
       cy.get(".MuiButton-contained").click();
@@ -78,14 +78,14 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_06", () => {
+    it("AddStock_06", () => {
       cy.get(".MuiFab-root").click();
       cy.get("#files").selectFile("cypress/fixtures/Image06.jpg");
       cy.get(".MuiButton-contained").click();
       cy.get(".MuiFormHelperText-root").should("have.text", "Enter name");
     });
 
-    it.skip("AddStock_07", () => {
+    it("AddStock_07", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName07");
       cy.get("#files").selectFile("cypress/fixtures/Image07.jpg");
@@ -97,7 +97,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_08", () => {
+    it("AddStock_08", () => {
       cy.get(".MuiFab-root").click();
       cy.get("#files").selectFile("cypress/fixtures/Image08.jpg");
       cy.get('input[name="price"]').clear();
@@ -108,7 +108,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_09", () => {
+    it("AddStock_09", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get(".MuiButton-contained").click();
@@ -166,7 +166,7 @@ describe("template spec", () => {
       );
     });
 
-    it.only("AddStock_14", () => {
+    it("AddStock_14", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName14");
       cy.get("#files").selectFile("cypress/fixtures/Image14.jpg");
@@ -179,7 +179,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_15", () => {
+    it("AddStock_15", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="name"]').type("StockName14");
@@ -190,7 +190,7 @@ describe("template spec", () => {
         "Min price is not lower than 100"
       );
     });
-    it.skip("AddStock_16", () => {
+    it("AddStock_16", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="price"]').type("text");
@@ -202,7 +202,7 @@ describe("template spec", () => {
         "Min price is not lower than 100"
       );
     });
-    it.skip("AddStock_17", () => {
+    it("AddStock_17", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="price"]').type("text");
@@ -213,7 +213,7 @@ describe("template spec", () => {
         "Min price is not lower than 100"
       );
     });
-    it.skip("AddStock_18", () => {
+    it("AddStock_18", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -229,7 +229,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_19", () => {
+    it("AddStock_19", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -244,7 +244,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_20", () => {
+    it("AddStock_20", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -260,7 +260,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_21", () => {
+    it("AddStock_21", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -275,7 +275,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_22", () => {
+    it("AddStock_22", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -288,7 +288,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_23", () => {
+    it("AddStock_23", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -300,7 +300,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_24", () => {
+    it("AddStock_24", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -313,7 +313,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_25", () => {
+    it("AddStock_25", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -325,7 +325,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_26", () => {
+    it("AddStock_26", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -339,7 +339,7 @@ describe("template spec", () => {
         "Min stock is not lower than 10"
       );
     });
-    it.skip("AddStock_27", () => {
+    it("AddStock_27", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -367,7 +367,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_29", () => {
+    it("AddStock_29", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName29");
       cy.get('input[name="price"]').clear();
@@ -378,7 +378,7 @@ describe("template spec", () => {
         "Min price is not lower than 100"
       );
     });
-    it.skip("AddStock_30", () => {
+    it("AddStock_30", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName30");
       cy.get('input[name="price"]').clear();
@@ -395,7 +395,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_31", () => {
+    it("AddStock_31", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -416,28 +416,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_31", () => {
-      cy.get(".MuiFab-root").click();
-      cy.get('input[name="price"]').clear();
-      cy.get('input[name="stock"]').clear();
-      cy.get('input[name="stock"]').type("5");
-      cy.get("#files").selectFile("cypress/fixtures/Image31.jpg");
-      cy.get(".MuiButton-contained").click();
-      cy.get(".MuiCardContent-root > :nth-child(2)").should(
-        "contain",
-        "Enter name"
-      );
-      cy.get(".MuiFormHelperText-root").should(
-        "contain",
-        "Min price is not lower than 100"
-      );
-      cy.get(".MuiFormHelperText-root").should(
-        "contain",
-        "Min stock is not lower than 10"
-      );
-    });
-
-    it.skip("AddStock_32", () => {
+    it("AddStock_32", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -453,7 +432,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_33", () => {
+    it("AddStock_33", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName33");
       cy.get('input[name="price"]').clear();
@@ -472,7 +451,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_34", () => {
+    it("AddStock_34", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName34");
       cy.get('input[name="price"]').clear();
@@ -490,7 +469,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_35", () => {
+    it("AddStock_35", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="price"]').type("50");
@@ -508,7 +487,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_36", () => {
+    it("AddStock_36", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="price"]').type("50");
@@ -529,7 +508,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_37", () => {
+    it("AddStock_37", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName37");
       cy.get('input[name="price"]').clear();
@@ -544,7 +523,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_38", () => {
+    it("AddStock_38", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName38");
       cy.get('input[name="price"]').clear();
@@ -558,7 +537,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_39", () => {
+    it("AddStock_39", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName39");
       cy.get('input[name="price"]').clear();
@@ -576,7 +555,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_40", () => {
+    it("AddStock_40", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="name"]').type("StockName40");
       cy.get('input[name="price"]').clear();
@@ -594,7 +573,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_41", () => {
+    it("AddStock_41", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -615,7 +594,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_42", () => {
+    it("AddStock_42", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="stock"]').clear();
@@ -635,7 +614,7 @@ describe("template spec", () => {
       );
     });
 
-    it.skip("AddStock_43", () => {
+    it("AddStock_43", () => {
       cy.get(".MuiFab-root").click();
       cy.get('input[name="price"]').clear();
       cy.get('input[name="price"]').type("5");
