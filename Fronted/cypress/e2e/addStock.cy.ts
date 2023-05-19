@@ -16,10 +16,7 @@ describe('template spec', () => {
       LoginPass()
     });
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
   it.skip('AddStock_01', () => {
     cy.get('.MuiFab-root').click()
     cy.get('input[name="name"]').type("StockName01")
@@ -30,7 +27,6 @@ describe('template spec', () => {
     cy.get('.MuiToolbar-root > .css-pf6rjo-MuiTypography-root').should("have.text", "For Project Software Testing in KMITL")
   })
 
-<<<<<<< Updated upstream
   it.skip('AddStock_15' , () =>{
     cy.get('.MuiFab-root').click()
     cy.get('input[name="price"]').clear()
@@ -377,7 +373,6 @@ describe('template spec', () => {
     cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
   })
 
-=======
   it.skip('AddStock_02', () => {
     cy.get('.MuiFab-root').click()
     cy.get('input[name="name"]').type("StockName02")
@@ -414,7 +409,6 @@ describe('template spec', () => {
     // cy.get('input[type=file]').selectFile('cypress/fixtures/file.json')
     cy.get('.MuiButton-contained').click()
     cy.get('.MuiToolbar-root > .css-pf6rjo-MuiTypography-root').should("have.text", "For Project Software Testing in KMITL")
->>>>>>> Stashed changes
 })
     
   it.skip('AddStock_05', () => {
