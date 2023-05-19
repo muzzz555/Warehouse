@@ -16,11 +16,6 @@ describe('template spec', () => {
       LoginPass()
     });
 
-<<<<<<< Updated upstream
-
-=======
-  /*
->>>>>>> Stashed changes
   it.skip('AddStock_01', () => {
     cy.get('.MuiFab-root').click()
     cy.get('input[name="name"]').type("StockName01")
@@ -28,7 +23,6 @@ describe('template spec', () => {
     cy.get('#files').selectFile('cypress/fixtures/Coke.png')
     // cy.get('input[type=file]').selectFile('cypress/fixtures/file.json')
     cy.get('.MuiButton-contained').click()
-<<<<<<< Updated upstream
     cy.get('.MuiToolbar-root > .css-pf6rjo-MuiTypography-root').should("have.text", "For Project Software Testing in KMITL")
   })
 
@@ -179,17 +173,6 @@ describe('template spec', () => {
     
   })
 
-
-
-
-
-  
-  
-  })
-=======
-    cy.pause()
-  })
-  */
 
   it.skip('AddStock_29', () => {
     cy.get('.MuiFab-root').click()
@@ -390,5 +373,4 @@ describe('template spec', () => {
   })
 
 })
->>>>>>> Stashed changes
 })
