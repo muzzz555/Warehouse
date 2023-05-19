@@ -16,7 +16,11 @@ describe('template spec', () => {
       LoginPass()
     });
 
+<<<<<<< Updated upstream
 
+=======
+  /*
+>>>>>>> Stashed changes
   it.skip('AddStock_01', () => {
     cy.get('.MuiFab-root').click()
     cy.get('input[name="name"]').type("StockName01")
@@ -24,6 +28,7 @@ describe('template spec', () => {
     cy.get('#files').selectFile('cypress/fixtures/Coke.png')
     // cy.get('input[type=file]').selectFile('cypress/fixtures/file.json')
     cy.get('.MuiButton-contained').click()
+<<<<<<< Updated upstream
     cy.get('.MuiToolbar-root > .css-pf6rjo-MuiTypography-root').should("have.text", "For Project Software Testing in KMITL")
   })
 
@@ -181,4 +186,209 @@ describe('template spec', () => {
   
   
   })
+=======
+    cy.pause()
+  })
+  */
+
+  it.skip('AddStock_29', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName29")
+    cy.get('input[name="price"]').clear()
+    cy.get('#files').selectFile('cypress/fixtures/Image29.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("have.text","Min price is not lower than 100")
+  })
+  it.skip('AddStock_30', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName30")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_31', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('#files').selectFile('cypress/fixtures/Image31.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_31', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('#files').selectFile('cypress/fixtures/Image31.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_32', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+
+  it.skip('AddStock_33', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName33")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("50")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('.MuiButton-contained').click()
+    cy.get('#files').selectFile('cypress/fixtures/Image33.jpg')
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_34', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName34")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("50")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_35', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("50")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('#files').selectFile('cypress/fixtures/Image35.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_36', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("50")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("5")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+  
+  it.skip('AddStock_37', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName37")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("2000")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('#files').selectFile('cypress/fixtures/Image37.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_38', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName38")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("2000")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_39', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName39")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('#files').selectFile('cypress/fixtures/Image39.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_40', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="name"]').type("StockName40")
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_41', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('#files').selectFile('cypress/fixtures/Image41.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_42', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it.skip('AddStock_43', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("5")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('#files').selectFile('cypress/fixtures/Image43.jpg')
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+  it('AddStock_44', () => {
+    cy.get('.MuiFab-root').click()
+    cy.get('input[name="price"]').clear()
+    cy.get('input[name="price"]').type("5")
+    cy.get('input[name="stock"]').clear()
+    cy.get('input[name="stock"]').type("text")
+    cy.get('.MuiButton-contained').click()
+    cy.get('.MuiCardContent-root > :nth-child(2)').should("contain","Enter name")
+    cy.get('.MuiFormHelperText-root').should("contain","Min price is not lower than 100")
+    cy.get('.MuiFormHelperText-root').should("contain","Min stock is not lower than 10")
+  })
+
+})
+>>>>>>> Stashed changes
 })
