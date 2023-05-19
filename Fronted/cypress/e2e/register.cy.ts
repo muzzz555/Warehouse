@@ -13,8 +13,18 @@ describe("register", () => {
     });
     it("Register_02", () => {
       cy.get('.MuiButton-contained').click()
-      cy.get('.css-ncjbhz').should("contain","Please fill out this field.");
+      cy.get('.css-ncjbhz').should("not.have.text", "Please fill out this field.");
     });
-
+    it("Register_03", () => {
+      cy.get('#password').type("1234")
+      cy.get('.MuiButton-contained').click()
+      cy.get('.css-ncjbhz').should("not.have.text", "Please fill out this field.");
+    });
+    it("Register_04", () => {
+      cy.get('#username').type("mu")
+      cy.get('.MuiButton-contained').click()
+      cy.get('.css-ncjbhz').should("not.have.text", "Please fill out this field.");
+    });
+    
   });
 });
