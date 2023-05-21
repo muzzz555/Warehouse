@@ -3,11 +3,11 @@ GET http://localhost:8085/api/v2/stock/product HTTP/1.1
 
 
 ### Get product by Id
-GET http://localhost:8085/api/v2/stock/product/7 HTTP/1.1
+GET http://localhost:8085/api/v2/stock/product/101 HTTP/1.1
 
 
 ### Get product by keyword
-GET http://localhost:8085/api/v2/stock/product/keyword/Arduino Nano HTTP/1.1
+GET http://localhost:8085/api/v2/stock/product/keyword/StockName05 HTTP/1.1
 
 
 ### Create 
